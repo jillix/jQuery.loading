@@ -1,8 +1,11 @@
 {
   "name": "engine-loader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Displays a fullscreen loader",
-  "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/jillix/jQuery.loading.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +13,11 @@
   "contributors": [
       "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net/)"
   ],
-  "license": "MIT"
+  "composition": {
+      "client": {
+          "module": [
+              "loader.js"
+          ]
+      }
+  }
 }
